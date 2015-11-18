@@ -98,7 +98,6 @@
     line-height: 1.42857143 !important;
     letter-spacing: 4px;
     border-radius: 0;
-    position:fixed;
 }
 
 .navbar li a, .navbar .navbar-brand {
@@ -157,25 +156,8 @@ footer .glyphicon {
         -webkit-transform: translateY(0%);
     }
 }
-/* Sticky mobile */
-.goToTop {
-	  position: fixed;
-	  top: 0;
-	  height: 50px;
-	  z-index: 1;
-}
-/* */
 @media screen and (max-width: 768px) {
     .col-sm-4 {
         text-align: center;
         margin: 25px 0;
     }
-/* Override Bootstrap Responsive CSS fixed navbar */
-@media (max-width: 979px) {
-  .navbar-fixed-top,
-  .navbar-fixed-bottom {
-      position: fixed;
-      margin-left: 0px;
-      margin-right: 0px;
-  }
-}
