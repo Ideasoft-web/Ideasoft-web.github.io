@@ -18,6 +18,12 @@
     				window.location.hash = hash;
     			});
   			});
+  		// Sticky mobile
+  		  $(window).bind('scroll', function() {
+  		    var navHeight = 300; // custom nav height
+  		    ($(window).scrollTop() > navHeight) ? $('nav').addClass('goToTop') : $('nav').removeClass('goToTop');
+  		  });
+  		//
 		})
 		
 		$(window).scroll(function() {
@@ -32,7 +38,7 @@
 		});
 		// Navbar collapse after click
 		$(document).on('click','.navbar-collapse.in',function(e) {
-		    if( $(e.target).is('a') && $(e.target).attr('class') != 'dropdown-toggle' ) {
-		        $(this).collapse('hide');
+			if( $(e.target).is('a') && $(e.target).attr('class') != 'dropdown-toggle' ) {
+				$(this).collapse('hide');
 		    }
 		});
